@@ -1,0 +1,916 @@
+.header {
+    width: 100%;
+    justify-content: space-between;
+    background-color: #2f3546;
+    height: 3.7rem;
+    box-sizing: border-box;
+    padding: 0 1.2rem;
+}
+.winepos-ui-searchbox input {
+    width: 10.15rem;
+    height: 1.8rem;
+    border-radius: 0.95rem;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    background: url(../images/icons/ic_search.png) no-repeat 8% / 0.675rem
+        0.675rem;
+    padding-left: 2rem;
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #d5d5d5;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-searchbox input::placeholder {
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #d5d5d5;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-logo img {
+    width: 6.05rem;
+    height: 1.05rem;
+}
+.winepos-ui-date {
+    height: 100%;
+    padding-top: 0.9rem;
+    box-sizing: border-box;
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: var(--base-white);
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-view {
+    background-color: #f4f3f7;
+    padding: 1rem 0 0 1rem;
+    align-items: flex-start;
+    gap: 1rem;
+    grid-gap: 1rem;
+}
+.winepos-ui-forms {
+    gap: 0.6rem;
+    grid-gap: 0.6rem;
+}
+.winepos-ui-productinfo {
+    background-color: var(--base-white);
+    padding: 0.8rem 0.9rem;
+    border-radius: 0.3rem;
+    align-items: flex-start;
+    gap: 1.2rem;
+    grid-gap: 1.2rem;
+}
+.winepos-ui-product-- {
+    gap: 0.5rem;
+    grid-gap: 0.5rem;
+}
+.winepos-ui-product-thumbnail {
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 0.3rem;
+    background-color: #f4f4f4;
+    justify-content: center;
+}
+.winepos-ui-product-thumbnail img {
+    width: 1.735rem;
+    height: 7.2rem;
+}
+.winepos-ui-conprice {
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.winepos-ui-conprice span {
+    font-size: 0.65rem;
+    letter-spacing: 0;
+    color: #808080;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-conprice h6 {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    color: #424242;
+    font-weight: var(--bold);
+    font-family: "Pretendard Variable";
+    line-height: 1;
+}
+.winepos-ui-info {
+    min-width: 17.3rem;
+    box-sizing: border-box;
+}
+.winepos-ui-info > .flex span {
+    font-size: 0.7rem;
+    letter-spacing: -0.5px;
+    color: var(--main-ocher);
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-info > .flex {
+    gap: 0.5rem;
+    grid-gap: 0.5rem;
+    margin-bottom: 0.35rem;
+}
+.winepos-ui-info > .flex > .flex {
+    gap: 0.1rem;
+    grid-gap: 0.1rem;
+}
+.winepos-ui-info > .flex > .flex img {
+    width: 0.85rem;
+    height: 0.85rem;
+}
+.winepos-ui-info > .flex > .flex span {
+    font-size: 0.7rem;
+    letter-spacing: -0.75px;
+    color: var(--main-ocher);
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-prodtitle {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    letter-spacing: -0.43px;
+    color: #292929;
+    font-weight: var(--semibold);
+    font-family: "Co-sb";
+}
+.winepos-ui-prodtitlekr {
+    font-size: 0.6rem;
+    letter-spacing: -0.43px;
+    line-height: 0.9rem;
+    color: #757576;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+    padding: 0.5rem 0 0.7rem;
+}
+.winepos-ui-info .winepos-ui-comment {
+    align-items: flex-start;
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+}
+.winepos-ui-comment .flex img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.winepos-ui-info .winepos-ui-comment > .comment {
+    font-size: 0.6rem;
+    letter-spacing: -0.43px;
+    line-height: 0.9rem;
+    color: #9a9a9a;
+    font-weight: var(--regular);
+    font-family: "Pretendard Variable";
+    margin-bottom: 0.15rem;
+}
+.winepos-ui-info .winepos-ui-country {
+    gap: 1rem;
+    grid-gap: 1rem;
+    padding-bottom: 0.59rem;
+    border-bottom: 1px solid #e2e3e7;
+}
+.winepos-ui-info .winepos-ui-country .winepos-ui-country-- {
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+}
+.winepos-ui-info .winepos-ui-country .winepos-ui-country-- img {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.winepos-ui-info .winepos-ui-country .winepos-ui-country-- span {
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #757575;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-info .winepos-ui-country .winepos-ui-oval {
+    gap: 0.5rem;
+    grid-gap: 0.5rem;
+}
+.winepos-ui-info .winepos-ui-country .flex .oval {
+    position: relative;
+    display: inline-block;
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #a7a7a7;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+    padding-left: 0.4rem;
+    line-height: 1;
+}
+.winepos-ui-info .winepos-ui-country .flex .oval::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.15rem;
+    height: 0.15rem;
+    border-radius: 50%;
+    background: #a7a7a7;
+}
+.winepos-ui-detailinfo {
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+    margin-top: 0.2rem;
+}
+.winepos-ui-detailinfo .flex {
+    gap: 1.4rem;
+    grid-gap: 1.4rem;
+}
+.winepos-ui-detailinfo > .Grape {
+    align-items: flex-start;
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.winepos-ui-detailinfo .flex .flex {
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.winepos-ui-detailinfo .flex h6 {
+    font-size: 0.6rem;
+    letter-spacing: -0.43px;
+    color: var(--main-ocher);
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-detailinfo .flex span {
+    font-size: 0.6rem;
+    letter-spacing: -0.17px;
+    line-height: 0.9rem;
+    color: #757575;
+    font-weight: var(--regular);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-user {
+    justify-content: space-between;
+    background-color: var(--base-white);
+    border-radius: 0.3rem;
+    height: 2.7rem;
+    padding: 0 0.9rem;
+}
+.winepos-ui-user-title {
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.winepos-ui-user-title img {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.winepos-ui-user-title strong {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+    color: #424240;
+    font-weight: var(--bold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-user-searchbox {
+    cursor: pointer;
+}
+.winepos-ui-user-searchbox .flex {
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.winepos-ui-user-searchbox span {
+    font-size: 0.65rem;
+    letter-spacing: 0;
+    color: #424242;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+    text-decoration: underline;
+}
+.winepos-ui-user-searchbox img {
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.winepos-ui-tabs {
+    gap: 0.96rem;
+    grid-gap: 0.96rem;
+}
+.winepos-ui-select-tabs {
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+}
+.winepos-ui-select-tab {
+    gap: 0.3rem;
+    grid-gap: 0.3rem;
+}
+.winepos-ui-select-tab div {
+    justify-content: center;
+    cursor: pointer;
+    width: 6.45rem;
+    height: 4.55rem;
+    border-radius: 0.3rem;
+    background-color: var(--base-white);
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+.winepos-ui-select-tab div span {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+    color: #424757;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-select-tab div.on {
+    border: 1.5px solid #ea5757;
+}
+.winepos-ui-select-tab div.on span {
+    color: #ea5757;
+}
+.winepos-ui-numbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    width: 16rem;
+    height: 14.3rem;
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
+}
+.winepos-ui-numbox .flex {
+    justify-content: center;
+    cursor: pointer;
+    background: var(--base-white);
+    height: 100%;
+    border: 1px solid #eaebef;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.winepos-ui-numbox .flex span {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-numbox .flex img {
+    width: 1.6rem;
+    height: 1.1rem;
+}
+.winepos-ui-order {
+    width: 100%;
+    min-height: 36rem;
+    border-radius: 1.2rem 0.3rem 0 0;
+    background-color: var(--base-white);
+    box-shadow: 0px 2px 14px 0 rgba(0, 0, 0, 0.08);
+    padding: 0.9rem 0 0;
+    box-sizing: border-box;
+    margin-top: -2.35rem;
+}
+.winepos-ui-order-title {
+    justify-content: center;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #eaebef;
+}
+.winepos-ui-order-title h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+    color: #424242;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-order-detail {
+    width: 100%;
+}
+.winepos-ui-order ul {
+    height: 23.065rem;
+    overflow-y: scroll;
+}
+.winepos-ui-order ul li {
+    padding: 1rem 0.65rem 1rem 0.9rem;
+}
+.winepos-ui-order ul li > .flex {
+    align-items: flex-start;
+    gap: 0.8rem;
+    grid-gap: 0.8rem;
+    border-bottom: 1px solid #eaebef;
+    padding-bottom: 0.9rem;
+}
+.winepos-ui-order ul li .flex .no {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    color: #424242;
+    font-weight: var(--bold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-order ul li .flex .winepos-ui-order-name {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-family: "Co-sb";
+    font-weight: var(--bold);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.winepos-ui-order ul li .flex .winepos-ui-order-comment {
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #757576;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+    padding: 0.2rem 0 0.5rem;
+}
+.winepos-ui-order ul li .flex .winepos-ui-ad {
+    gap: 0.6rem;
+    grid-gap: 0.6rem;
+}
+.winepos-ui-order ul li .flex .winepos-ui-ad .winepos-ui-accumulate {
+    position: relative;
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #9a9a9a;
+    font-weight: var(--regular);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-order ul li .flex .winepos-ui-ad .winepos-ui-accumulate::after {
+    content: "";
+    position: absolute;
+    right: -0.32rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 9px;
+    background: #d8d8d8;
+}
+.winepos-ui-order ul li .flex .winepos-ui-ad .winepos-ui-discount {
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #ea5757;
+    font-weight: var(--regular);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-quantity {
+    justify-content: space-between;
+    margin-top: 0.6rem;
+}
+.winepos-ui-quantity > .flex {
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.winepos-ui-quantity h2 {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-weight: var(--bold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-quantity-count {
+    border: 1px solid #dadada;
+}
+.winepos-ui-btn-minus,
+.winepos-ui-btn-plus {
+    justify-content: center;
+    cursor: pointer;
+    width: 1.6rem;
+    height: 1.6rem;
+    -webkit-tap-highlight-color: transparent;
+}
+.winepos-ui-btn-minus img {
+    width: 0.405rem;
+    height: 0.045rem;
+}
+.winepos-ui-btn-plus img {
+    width: 0.45rem;
+    height: 0.45rem;
+}
+.winepos-ui-concount {
+    justify-content: center;
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+}
+.winepos-ui-concount span {
+    font-size: 0.7rem;
+    letter-spacing: -0.22px;
+    color: #090909;
+    font-weight: var(--regular);
+    font-family: "Pretendard Variable";
+    -webkit-tap-highlight-color: transparent;
+}
+.winepos-ui-order-close {
+    width: 0.9rem;
+    height: 0.9rem;
+    cursor: pointer;
+    padding: 0.35rem 0;
+}
+.winepos-ui-payment-form {
+    padding: 0.95rem 0.9rem 1.2rem;
+    gap: 1.1rem;
+    grid-gap: 1.1rem;
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
+}
+.winepos-ui-payment-form .flex-direction {
+    gap: 0.6rem;
+    grid-gap: 0.6rem;
+}
+.winepos-ui-payment-form .flex {
+    justify-content: space-between;
+}
+.winepos-ui-payment-form .flex h6 {
+    font-size: 0.65rem;
+    letter-spacing: 0;
+    color: #757576;
+    font-weight: var(--regular);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-payment-form .flex span {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-payment-form .flex span.dc {
+    color: #ea5757;
+}
+.winepos-ui-btn-payment {
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 3.2rem;
+    padding: 0 1rem;
+    border-radius: 0.2rem;
+    background: #ea5757;
+    box-sizing: border-box;
+}
+.winepos-ui-btn-payment .flex {
+    width: 100%;
+    justify-content: space-between;
+}
+.winepos-ui-btn-payment .flex span {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    color: var(--base-white);
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-btn-payment .flex h2 {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    color: var(--base-white);
+    font-weight: var(--bold);
+    font-family: "Pretendard Variable";
+}
+
+/* 고객정보 검색 후 */
+.winepos-ui-user-searchbox .winepos-ui-user-info {
+    display: none;
+    gap: 0.7rem;
+    grid-gap: 0.7rem;
+}
+.winepos-ui-user-searchbox .winepos-ui-user-info > .flex {
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.winepos-ui-user-info > .flex span {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+    text-decoration: none;
+}
+.winepos-ui-user-info > .flex small {
+    font-size: 0.55rem;
+    letter-spacing: -0.25px;
+    color: #757576;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+    text-decoration: underline;
+}
+.winepos-ui-user-info > .flex small span {
+    font-size: 0.55rem;
+    letter-spacing: -0.25px;
+    color: #757576;
+    font-weight: var(--bold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-user-info img {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+/* 옵션 팝업 */
+.winepos-ui-option-pop-dis {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100%;
+    max-width: 51.2rem;
+    height: 100%;
+    max-height: 767.297px;
+    z-index: 9999;
+    transition: opacity 0.4s ease-in-out;
+    transition-duration: 0.6s;
+}
+.winepos-ui-option-pop-dis.on {
+    visibility: visible;
+    opacity: 1;
+}
+.winepos-ui-option-pop-close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+}
+.winepos-ui-option-dis {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--base-white);
+    border-radius: 1.2rem;
+    padding: 1.5rem 1.6rem;
+    z-index: 300;
+    width: 30.2rem;
+    height: 29.8rem;
+    box-sizing: border-box;
+}
+.winepos-ui-pop-title {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.winepos-ui-pop-title h6 {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    color: #424242;
+    font-weight: var(--bold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-pop-title img {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+.winepos-ui-pop-product-info {
+    gap: 1rem;
+    grid-gap: 1rem;
+    align-items: flex-start;
+}
+.winepos-ui-pop-product-info .no {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    color: #424242;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-pop-product-info .flex-direction {
+    width: 100%;
+}
+.winepos-ui-pop-product-info .flex-direction .flex-direction {
+    gap: 0.2rem;
+    grid-gap: 0.2rem;
+}
+.winepos-ui-pop-product-info .flex-direction h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-family: "Co-sb";
+    font-weight: var(--bold);
+}
+.winepos-ui-pop-product-info .flex-direction p {
+    font-size: 0.6rem;
+    letter-spacing: 0;
+    color: #757576;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-pop-product-info .flex-direction > .flex {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.winepos-ui-pop-product-info .flex-direction .flex > span {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    color: #ea5757;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-pop-product-info .flex-direction .flex > .flex {
+    gap: 0.4rem;
+    grid-gap: 0.4rem;
+}
+.winepos-ui-pop-product-info .flex-direction .flex > .flex span:nth-child(1) {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    color: #9a9a9a;
+    font-weight: var(--regular);
+    font-family: "Pretendard Variable";
+    text-decoration: line-through;
+}
+.winepos-ui-pop-product-info .flex-direction .flex > .flex span:nth-child(2) {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    color: #424242;
+    font-weight: var(--bold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-value {
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0.2rem;
+    background: #f8f8f8;
+    padding: 1.05rem 1.1rem;
+    box-sizing: border-box;
+    margin: 1.7rem 0 1rem;
+}
+.winepos-ui-value .flex span,
+.winepos-ui-value .flex {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-value > span {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+    color: #757576;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-pop-box {
+    gap: 0.86rem;
+    grid-gap: 0.86rem;
+}
+.winepos-ui-pop-numbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    min-width: 16rem;
+    height: 14.3rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 14px 0 rgba(0, 0, 0, 0.08);
+}
+.winepos-ui-pop-numbox .flex {
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: var(--base-white);
+    border: 1px solid #eaebef;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.winepos-ui-pop-numbox .flex span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-pop-numbox .flex img {
+    width: 1.6rem;
+    height: 1.1rem;
+}
+.winepos-ui-pop-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 100%;
+    height: 14.3rem;
+    grid-gap: 0.5rem 0.5rem;
+}
+.winepos-ui-pop-btns .flex {
+    cursor: pointer;
+    justify-content: center;
+    height: 100%;
+    border-radius: 0.3rem;
+    border: 1.4px solid #eaebef;
+    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+.winepos-ui-pop-btns .flex span {
+    font-size: 0.7rem;
+    letter-spacing: 0;
+    color: #424757;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+}
+.winepos-ui-pop-btns .flex.confirm {
+    background: #2f3546;
+    border: none;
+}
+.winepos-ui-pop-btns .flex.confirm span {
+    color: var(--base-white);
+}
+.winepos-ui-pop-btns .opb.on {
+    border: 1.4px solid #ea5757;
+}
+.winepos-ui-pop-btns .opb.on span {
+    color: #ea5757;
+}
+
+.winepos-ui-pop-search {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    transition: opacity 0.4s ease-in-out;
+}
+.winepos-ui-pop-search.on {
+    visibility: visible;
+    opacity: 1;
+}
+.winepos-ui-search-close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+.winepos-ui-search-view {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--base-white);
+    border-radius: 1.2rem;
+    padding: 1.5rem 1.6rem;
+    z-index: 300;
+    width: 30.2rem;
+    height: 29.8rem;
+    box-sizing: border-box;
+}
+.winepos-searchbox .searchbox input {
+    width: 100%;
+    height: 2.2rem;
+    padding: 0 1.5rem;
+    border-bottom: 1px solid #757576;
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    color: #292929;
+    line-height: 1;
+    font-weight: var(--semibold);
+    font-family: "Pretendard Variable";
+    box-sizing: border-box;
+    background: url(../images/btns/btn_search.png) no-repeat 0% / 18px 18px;
+}
+.searchinfo .search-hd {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1.5fr 0.5fr;
+    align-items: center;
+    margin-top: 0.65rem;
+    border-top: 1px solid #424242;
+}
+.searchinfo .search-hd div {
+    padding: 0.5rem 0;
+    font-size: 0.65rem;
+    letter-spacing: 0;
+    color: #6d6f76;
+    font-weight: var(--medium);
+    font-family: "Pretendard Variable";
+    background: #f1f1f3;
+    text-align: center;
+}
+.searchinfo .search-bd {
+    height: 18rem;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+}
+.searchinfo .search-bd::-webkit-scrollbar {
+    display: none;
+}
+.searchinfo .search-bd .search-con {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 1.5fr 0.5fr;
+    cursor: pointer;
+    margin-bottom: 0.25rem;
+}
+.searchinfo .search-bd .search-con:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.searchinfo .search-bd .search-con div {
+    padding: 0.5rem 0;
+    font-size: 0.65rem;
+    letter-spacing: 0;
+    color: #292929;
+    font-weight: var(--regular);
+    font-family: "Pretendard Variable";
+    text-align: center;
+}

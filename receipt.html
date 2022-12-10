@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/receipt.css">
+  <title>WINEBOW POS</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="header">
+        <div></div>
+        <div class="receipt-ui-logo flex"><img src="images/logo.png" alt="WINEBOW POS"></div>
+        <div class="flex receipt-btn-movemain-prev">
+          <span>메인으로</span>
+          <img src="images/btns/btn_prev_main.png" alt="">
+        </div>
+      </div>
+      <div class="receipt-ui-view flex">
+        <div class="receipt-ui-receipt-detail">
+          <h2 class="receipt-ui-detail-title">영수증 출력</h2>
+          <div class="receipt-ui-shipping">
+            <div class="receipt-ui-shipping-title"><h3>배송하기</h3></div>
+            <div class="receipt-ui-inputbox flex-direction">
+              <div class="flex">
+                <div class="flex">
+                  <input type="text" placeholder="이메일 주소를 입력해주세요.">
+                  <span>@</span>
+                  <select>
+                    <option value="">선택해주세요.</option>
+                    <option value="">naver.com</option>
+                    <option value="">daum.net</option>
+                    <option value="">gamil.com</option>
+                  </select>
+                </div>
+                <div class="receipt-ui-mail-btn flex"><span>메일 보내기</span></div>
+              </div>
+              <div class="receipt-checkbox flex">
+                <input type="checkbox" id="ch1">
+                <label for="ch1">
+                  배송요청
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="receipt-ui-orderer">
+            <div class="receipt-ui-orderer-title flex">
+              <h3>주문자</h3>
+              <div class="receipt-ui-orderer-info flex"><span>고객정보</span></div>
+            </div>
+            <div class="receipt-ui-orderer-detail flex-direction">
+              <div class="flex">
+                <h6>수령자</h6>
+                <input type="text" value="김보우">
+              </div>
+              <div class="flex">
+                <h6>수령자 연락처</h6>
+                <input type="text" value="010-3320-1029">
+              </div>
+              <div class="flex">
+                <h6>수령자 주소</h6>
+                <input type="text" value="서울시 마포구 서교동 333-11 1층">
+              </div>
+              <div class="flex">
+                <h6>남기실 말씀</h6>
+                <input type="text" value="(-)">
+              </div>
+            </div>
+          </div>
+          <div class="receipt-ui-total-price flex">
+            <h3>총 결제금액</h3>
+            <div class="flex-direction">
+              <span><span>13,100,900</span> 원</span>
+              <p><span>8,640 p</span> 적립예정</p>
+            </div>
+          </div>
+        </div>
+        <div class="receipt-ui-- flex-direction">
+          <div class="receipt-ui-receiptview flex">
+            <img src="images/receipt.png" alt="">
+          </div>
+          <div class="flex receipt-ui-receiptprint">
+            <div class="receipt-ui-btn-receiptprint flex">
+              <span>영수증 출력</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

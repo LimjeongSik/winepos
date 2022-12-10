@@ -1,0 +1,248 @@
+.header {
+  width:100%;
+  justify-content:center;
+  background-color:#2f3546;
+  height:3.7rem;
+  box-sizing:border-box;
+  padding:0 1.2rem;
+}
+.winepos-ui-logo img {width:6.05rem;height:1.05rem;}
+.payment-ui-view {align-items:flex-start;}
+.payment-ui-order-tabs {
+  min-width:296px;
+  min-height:36rem;
+  background:#1b1f2b;
+  border-radius:0.3rem 1.2rem 0 0;
+  box-shadow:0px 2px 14px 0 rgba(0,0,0,0.08);
+  box-sizing:border-box;
+  margin-top:-0.9rem;
+}
+.payment-ui-order-title {text-align:center;padding:0.9rem 0;border-bottom:1px solid #2e323f;}
+.payment-ui-order-title h2 {
+  font-size:0.8rem;
+  letter-spacing:0;
+  color:#a7a7a7;
+  font-weight:var(--semibold);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-order-tabs ul li {
+  cursor:pointer;
+  padding:1.25rem 1.8rem;
+  width:100%;
+  box-sizing:border-box;
+  font-size:0.75rem;
+  letter-spacing:0;
+  color:#d5d5d5;
+  font-weight:var(--extrabold);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-order-tabs ul li.on {
+  background:linear-gradient(to right , rgba(53,58,77,0.0) 0% , #353a4d 100%);
+}
+.payment-ui-detail {
+  width:100%;
+  background-color:var(--base-white);
+  padding:1.9rem 1.4rem 0;
+  border-right:1px solid #eaebef;
+  border-bottom:1px solid #eaebef;
+  min-height: calc(36rem - 0.9rem);
+  box-sizing: border-box;
+}
+.payment-ui-title {align-items:center;padding-bottom:1rem;border-bottom:1px solid #ededed;}
+.payment-ui-title > h6 {
+  font-size:0.7rem;
+  letter-spacing:0;
+  color:#757576;
+  font-weight:var(--semibold);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-title > span {
+  font-size:1.7rem;
+  letter-spacing:0;
+  color:#292929;
+  font-weight:var(--semibold);
+  font-family: 'Pretendard Variable';
+  padding:0.4rem 0 0.6rem;
+}
+.payment-ui-title .payment-ui-grid {
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  align-items:center;
+}
+.payment-ui-title .payment-ui-grid div:nth-child(2){text-align:center;}
+.payment-ui-title .payment-ui-grid div span {
+  font-size:0.8rem;
+  letter-spacing:0;
+  color:#424242;
+  font-weight:var(--bold);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-title .payment-ui-grid div:nth-child(3) {text-align:right;}
+.payment-ui-title .payment-ui-grid div:nth-child(3) span {
+  font-size:0.6rem;
+  letter-spacing:0;
+  color:#a4a7b2;
+  font-weight:var(--medium);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-title .payment-ui-grid div:nth-child(3) span span {font-weight:var(--regular);}
+.payment-ui-box {margin-top:1.25rem;gap:1rem;grid-gap:1rem;}
+.payment-ui-numbox {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  align-items:center;
+  min-width:19rem;
+  height:18.5rem;
+  border-radius:0.3rem;
+  overflow:hidden;
+  background:var(--base-white);
+  box-shadow:0px 2px 14px 0 rgba(0,0,0,0.08);
+  box-sizing:border-box;
+}
+.payment-ui-numbox .flex {
+  justify-content:center;
+  cursor:pointer;
+  height:100%;
+  background:var(--base-white);
+  border:1px solid #eaebef;
+  margin-left:-1px;
+  margin-right:-1px;
+}
+.payment-ui-numbox div span {
+  font-size:1.4rem;
+  letter-spacing:0;
+  color:#1b1f2b;
+  font-weight:var(--medium);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-numbox div img {width:1.6rem;height:1.1rem;}
+.payment-ui-info {background-color:#f9f9f9;border:1px solid #eaebef;border-radius:0.3rem;padding:1rem 0.8rem;width:100%;min-height:18.5rem;box-sizing:border-box;}
+.payment-ui-info > h4 {
+  font-size:0.8rem;
+  letter-spacing:0;
+  color:#424240;
+  font-weight:var(--bold);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-info .flex-direction {gap:0.65rem;grid-gap:0.65rem;margin-top:0.95rem;padding-bottom:1.25rem;border-bottom:1px solid #eaebef;}
+.payment-ui-info .flex-direction .flex {justify-content:space-between;}
+.payment-ui-info .flex-direction .flex h6 {
+  font-size:0.65rem;
+  letter-spacing:0;
+  color:#757576;
+  font-weight:var(--medium);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-info .flex-direction .flex span {
+  font-size:0.75rem;
+  letter-spacing:0;
+  color:#424242;
+  font-weight:var(--semibold);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-user-info .flex h4 {
+  font-size:0.8rem;
+  letter-spacing:0;
+  color:#424240;
+  font-weight:var(--bold);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-info .payment-ui-user-info {border-bottom:0;margin-top:0.85rem;padding-bottom:0.6rem;}
+.payment-ui-user-info .flex img {width:0.8rem;height:0.8rem;}
+.payment-ui-info .payment-ui-user-info .payment-ui-userinfobox {
+  justify-content:center;
+  width:100%;
+  height:3.6rem;
+  border-radius:0.2rem;
+  background:#ececec;
+}
+.payment-ui-info .payment-ui-user-info .payment-ui-userinfobox .flex-direction {align-items:center;gap:0.4rem;grid-gap:0.4rem;margin:0;padding:0;}
+.payment-ui-info .payment-ui-user-info .payment-ui-userinfobox .flex-direction h6 {
+  font-size:0.75rem;
+  letter-spacing:0;
+  color:#292929;
+  font-weight:var(--medium);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-info .payment-ui-user-info .payment-ui-userinfobox .flex-direction span {
+  font-size:0.65rem;
+  letter-spacing:-0.3px;
+  color:#1f1f1f;
+  font-weight:var(--medium);
+  font-family: 'Pretendard Variable';
+  text-decoration: underline;
+}
+.payment-ui-info .payment-ui-user-info .payment-ui-userinfobox .flex-direction span span {font-weight:var(--bold);}
+.payment-ui-btn-payment {
+  justify-content:center;
+  cursor:pointer;
+  width:100%;
+  height:2.5rem;
+  border-radius:0.2rem;
+  background-color:#ea5757;
+  box-sizing:border-box;
+}
+.payment-ui-btn-payment span {
+  font-size:0.75rem;
+  letter-spacing:0;
+  color:var(--base-white);
+  font-weight:var(--semibold);
+  font-family: 'Pretendard Variable';
+}
+.payment-ui-btns {
+  width:100%;
+  gap:0.8rem;
+  grid-gap:0.8rem;
+  margin-top:2.5rem;
+}
+.payment-ui-btns div {
+  flex:1;
+  justify-content:center;
+  cursor:pointer;
+  height:3.2rem;
+  border-radius:0.2rem;
+  background:#f6f7fa;
+  box-sizing:border-box;
+}
+.payment-ui-btns div span {
+  font-size:0.75rem;
+  letter-spacing:0;
+  color:#2f3546;
+  font-weight:var(--bold);
+  font-family: 'Pretendard Variable';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

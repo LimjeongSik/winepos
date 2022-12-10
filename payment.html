@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/payment.css">
+  <title>WINEBOW POS</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="header flex">
+        <div class="winepos-ui-logo flex"><img src="images/logo.png" alt="WINEBOW POS"></div>
+      </div>
+      <div class="payment-ui-view flex">
+        <div class="payment-ui-order-tabs">
+          <div class="payment-ui-order-title"><h2>주문 / 결제하기</h2></div>
+          <ul class="flex-direction">
+            <li class="on">신용카드</li>
+            <li>현금</li>
+            <li>제로페이</li>
+            <li>카카오페이</li>
+            <li>계좌이체</li>
+            <li>멤버 포인트</li>
+          </ul>
+        </div>
+        <div class="payment-ui-detail">
+          <div class="flex-direction payment-ui-title">
+            <h6>총 금액</h6>
+            <span>1,290,400원</span>
+            <div class="payment-ui-grid">
+              <div></div>
+              <div><span>0원</span></div>
+              <div><span><span>분할결제 잔액 :</span> 620,000원</span> </div>
+            </div>
+          </div>
+          <div class="payment-ui-box flex">
+            <div class="payment-ui-numbox">
+              <div class="flex"><span>1</span></div>
+              <div class="flex"><span>2</span></div>
+              <div class="flex"><span>3</span></div>
+              <div class="flex"><span>4</span></div>
+              <div class="flex"><span>5</span></div>
+              <div class="flex"><span>6</span></div>
+              <div class="flex"><span>7</span></div>
+              <div class="flex"><span>8</span></div>
+              <div class="flex"><span>9</span></div>
+              <div class="flex"><span>0</span></div>
+              <div class="flex"><span>00</span></div>
+              <div class="flex"><img src="images/btns/btn_delete.png" alt=""></div>
+            </div>
+            <div class="payment-ui-info flex-direction">
+              <h4>결제상품 정보</h4>
+              <div class="flex-direction">
+                <div class="flex">
+                  <h6>신용카드</h6>
+                  <span>120,000원</span>
+                </div>
+                <div class="flex">
+                  <h6>현금</h6>
+                  <span>150,000원</span>
+                </div>
+                <div class="flex">
+                  <h6>맴버 포인트</h6>
+                  <span>8,630원</span>
+                </div>
+              </div>
+              <div class="payment-ui-user-info flex-direction">
+                <div class="flex">
+                  <h4>고객정보</h4>
+                  <img src="images/btns/btn_search2.png" alt="">
+                </div>
+                <div class="payment-ui-userinfobox flex">
+                  <div class="flex-direction">
+                    <h6>김보우 님</h6>
+                    <span>사용가능 적립금 <span>8,640p</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-ui-btn-payment flex"><span>결제하기</span></div>
+            </div>
+          </div>
+          <div class="payment-ui-btns flex">
+            <div class="flex payment-ui-btn-prev"><span>뒤로가기</span></div>
+            <div class="flex payment-ui-btn-paymentchk"><span>결제확인</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let orderTabs = document.querySelectorAll('.payment-ui-order-tabs ul li');
+    orderTabs.forEach((item) => {
+      item.addEventListener('click',(e)=>{
+        for(nb of orderTabs){
+          nb.classList.remove('on');
+        }
+        e.target.classList.add('on');
+      })
+    });
+  </script>
+</body>
+</html>

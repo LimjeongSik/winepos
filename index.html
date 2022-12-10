@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>WINEBOW POS</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="header flex">
+                    <div class="winepos-ui-searchbox">
+                        <input type="text" placeholder="스캔 및 검색" />
+                    </div>
+                    <div class="winepos-ui-logo flex">
+                        <img src="images/logo.png" alt="WINEBOW POS" />
+                    </div>
+                    <div class="winepos-ui-date date"></div>
+                </div>
+                <div class="winepos-ui-view flex">
+                    <div class="winepos-ui-forms flex-direction">
+                        <div class="winepos-ui-productinfo flex">
+                            <div class="winepos-ui-product-- flex-direction">
+                                <div class="winepos-ui-product-thumbnail flex">
+                                    <img src="images/product.png" alt="" />
+                                </div>
+                                <div class="winepos-ui-conprice flex-direction">
+                                    <span>23 / ₩150,000</span>
+                                    <h6>5,120,000 원</h6>
+                                </div>
+                            </div>
+                            <div class="winepos-ui-info flex-direction">
+                                <div class="flex">
+                                    <span>2018</span>
+                                    <div class="flex">
+                                        <img
+                                            src="images/icons/ic_wb.png"
+                                            alt=""
+                                        />
+                                        <span>3.5</span>
+                                    </div>
+                                </div>
+                                <h2 class="winepos-ui-prodtitle">
+                                    J.LOHR Estate Seven Oaks Cabern<br />
+                                    et Sauvignon
+                                </h2>
+                                <p class="winepos-ui-prodtitlekr">
+                                    제이 로어 이스테이트 세븐 오크 까베르네
+                                    소비뇽
+                                </p>
+                                <div class="winepos-ui-comment flex">
+                                    <div class="flex">
+                                        <img
+                                            src="images/icons/ic_comment.png"
+                                            alt="한줄평"
+                                        />
+                                    </div>
+                                    <span class="comment">
+                                        단맛이 없는 이태리 레드 와인, 제이 로어
+                                        이스테이트 세븐<br />
+                                        오크 까베르네 소비뇽 한줄평이 두줄일 때
+                                    </span>
+                                </div>
+                                <div class="winepos-ui-country flex">
+                                    <div class="winepos-ui-country-- flex">
+                                        <img
+                                            src="images/icons/ic_france.png"
+                                            alt=""
+                                        />
+                                        <span>France</span>
+                                    </div>
+                                    <div class="flex winepos-ui-oval">
+                                        <span class="oval">화이트 진로</span>
+                                        <span class="oval">345병</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-direction winepos-ui-detailinfo"
+                                >
+                                    <div class="flex">
+                                        <div class="flex">
+                                            <h6>색상</h6>
+                                            <span>레드</span>
+                                        </div>
+                                        <div class="flex">
+                                            <h6>당도</h6>
+                                            <span>드라이</span>
+                                        </div>
+                                        <div class="flex">
+                                            <h6>용량</h6>
+                                            <span>750ml</span>
+                                        </div>
+                                        <div class="flex">
+                                            <h6>알콜도수</h6>
+                                            <span>12.5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex Grape">
+                                        <h6>Grape</h6>
+                                        <span>
+                                            Mourvedre/Monastrell,
+                                            Muscat/Moscato,<br />
+                                            Zinfandel/Primitivo, Refosco dal
+                                            Peduncolo Rosso
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="winepos-ui-user flex">
+                            <div class="flex winepos-ui-user-title">
+                                <img src="images/icons/ic_user.png" alt="" />
+                                <strong>고객정보</strong>
+                            </div>
+                            <div class="flex winepos-ui-user-searchbox">
+                                <div class="winepos-ui-user-search flex">
+                                    <span>고객 검색하기</span>
+                                    <img
+                                        src="images/btns/btn_search.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="winepos-ui-user-info flex">
+                                    <div class="flex">
+                                        <span class="user__name"
+                                            >김보우 님</span
+                                        >
+                                        <small
+                                            >사용가능 적립금
+                                            <span class="user__point"
+                                                >8,640p</span
+                                            ></small
+                                        >
+                                    </div>
+                                    <img
+                                        src="images/btns/btn_cancel.png"
+                                        alt=""
+                                        class="search__info__cancel"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="winepos-ui-tabs flex">
+                            <div class="winepos-ui-select-tabs flex-direction">
+                                <div class="winepos-ui-select-tab flex">
+                                    <div
+                                        class="flex winepos-ui-tab discountset"
+                                    >
+                                        <span>할인 적용</span>
+                                    </div>
+                                    <div class="flex winepos-ui-tab">
+                                        <span>예약/배송</span>
+                                    </div>
+                                </div>
+                                <div class="winepos-ui-select-tab flex">
+                                    <div class="flex winepos-ui-tab">
+                                        <span>영수증검색</span>
+                                    </div>
+                                    <div class="flex winepos-ui-tab">
+                                        <span>보류/호출</span>
+                                    </div>
+                                </div>
+                                <div class="winepos-ui-select-tab flex">
+                                    <div class="flex winepos-ui-tab">
+                                        <span>현금입출</span>
+                                    </div>
+                                    <div class="flex winepos-ui-tab">
+                                        <span>마감하기</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="winepos-ui-numbox">
+                                <div class="flex"><span>1</span></div>
+                                <div class="flex"><span>2</span></div>
+                                <div class="flex"><span>3</span></div>
+                                <div class="flex"><span>4</span></div>
+                                <div class="flex"><span>5</span></div>
+                                <div class="flex"><span>6</span></div>
+                                <div class="flex"><span>7</span></div>
+                                <div class="flex"><span>8</span></div>
+                                <div class="flex"><span>9</span></div>
+                                <div class="flex"><span>0</span></div>
+                                <div class="flex"><span>00</span></div>
+                                <div class="flex">
+                                    <img
+                                        src="images/btns/btn_delete.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="winepos-ui-order">
+                        <div class="winepos-ui-order-title flex">
+                            <h2>주문 / 결제하기</h2>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="flex">
+                                    <span class="no">1</span>
+                                    <div
+                                        class="winepos-ui-order-detail flex-direction"
+                                    >
+                                        <h6 class="winepos-ui-order-name">
+                                            CECCHI Tenuta Alzatura
+                                            MontefaMontefalco SABCDEFGHIJK
+                                        </h6>
+                                        <p class="winepos-ui-order-comment">
+                                            체끼 테누타 알자투라 몬테팔코
+                                            사르란티노
+                                        </p>
+                                        <div class="flex winepos-ui-ad">
+                                            <span class="winepos-ui-accumulate"
+                                                >+9,320원 적립</span
+                                            >
+                                            <span class="winepos-ui-discount"
+                                                >-25,450원(15%) 할인</span
+                                            >
+                                        </div>
+                                        <div class="winepos-ui-quantity flex">
+                                            <h2 class="winepos-ui-order-price">
+                                                5,120,000원
+                                            </h2>
+                                            <div class="flex">
+                                                <div
+                                                    class="winepos-ui-quantity-count flex"
+                                                >
+                                                    <div
+                                                        class="flex winepos-ui-btn-minus"
+                                                    >
+                                                        <img
+                                                            src="images/btns/btn_minus.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="flex winepos-ui-concount"
+                                                    >
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div
+                                                        class="flex winepos-ui-btn-plus"
+                                                    >
+                                                        <img
+                                                            src="images/btns/btn_plus.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <img
+                                                    src="images/btns/btn_close.png"
+                                                    alt=""
+                                                    class="winepos-ui-order-close"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex">
+                                    <span class="no">2</span>
+                                    <div
+                                        class="winepos-ui-order-detail flex-direction"
+                                    >
+                                        <h6 class="winepos-ui-order-name">
+                                            CECCHI Tenuta Alzatura
+                                            MontefaMontefalco SABCDEFGHIJK
+                                        </h6>
+                                        <p class="winepos-ui-order-comment">
+                                            체끼 테누타 알자투라 몬테팔코
+                                            사르란티노
+                                        </p>
+                                        <div class="flex winepos-ui-ad">
+                                            <span class="winepos-ui-accumulate"
+                                                >+9,320원 적립</span
+                                            >
+                                            <span class="winepos-ui-discount"
+                                                >-25,450원(15%) 할인</span
+                                            >
+                                        </div>
+                                        <div class="winepos-ui-quantity flex">
+                                            <h2 class="winepos-ui-order-price">
+                                                5,120,000원
+                                            </h2>
+                                            <div class="flex">
+                                                <div
+                                                    class="winepos-ui-quantity-count flex"
+                                                >
+                                                    <div
+                                                        class="flex winepos-ui-btn-minus"
+                                                    >
+                                                        <img
+                                                            src="images/btns/btn_minus.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="flex winepos-ui-concount"
+                                                    >
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div
+                                                        class="flex winepos-ui-btn-plus"
+                                                    >
+                                                        <img
+                                                            src="images/btns/btn_plus.png"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <img
+                                                    src="images/btns/btn_close.png"
+                                                    alt=""
+                                                    class="winepos-ui-order-close"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="winepos-ui-payment-form flex-direction">
+                            <div class="flex-direction">
+                                <div class="flex">
+                                    <h6>총 수량</h6>
+                                    <span>8개</span>
+                                </div>
+                                <div class="flex">
+                                    <h6>총 금액</h6>
+                                    <span>250,000,4000원</span>
+                                </div>
+                                <div class="flex">
+                                    <h6>총 할인 금액</h6>
+                                    <span class="dc">-13,100,900원</span>
+                                </div>
+                            </div>
+                            <div class="winepos-ui-btn-payment flex">
+                                <div class="flex">
+                                    <span>결제하기</span>
+                                    <h2>1,290,400원</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="winepos-ui-option-pop-dis">
+            <div class="winepos-ui-option-pop-close"></div>
+            <div class="winepos-ui-option-dis">
+                <div class="winepos-ui-pop-title flex">
+                    <h6>할인 적용</h6>
+                    <img
+                        src="images/btns/btn_close2.png"
+                        alt=""
+                        class="pos-pop-close"
+                    />
+                </div>
+                <div class="winepos-ui-pop-product-info flex">
+                    <span class="no">1</span>
+                    <div class="flex-direction">
+                        <div class="flex-direction">
+                            <h2>
+                                CECCHI Tenuta Alzatura MontefaMontefalco
+                                Sagrantino
+                            </h2>
+                            <p>체끼 테누타 알자투라 몬테팔코 사르란티노</p>
+                        </div>
+                        <div class="flex">
+                            <span>-25,450원(15%) 할인</span>
+                            <div class="flex">
+                                <span>712,000원</span>
+                                <span>5,120,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="winepos-ui-value flex">
+                    <div class="flex"><span class="total_value">0</span>원</div>
+                    <span>할인최종 금액</span>
+                </div>
+                <div class="winepos-ui-pop-box flex">
+                    <div class="winepos-ui-pop-numbox">
+                        <div class="flex"><span>1</span></div>
+                        <div class="flex"><span>2</span></div>
+                        <div class="flex"><span>3</span></div>
+                        <div class="flex"><span>4</span></div>
+                        <div class="flex"><span>5</span></div>
+                        <div class="flex"><span>6</span></div>
+                        <div class="flex"><span>7</span></div>
+                        <div class="flex"><span>8</span></div>
+                        <div class="flex"><span>9</span></div>
+                        <div class="flex"><span>0</span></div>
+                        <div class="flex"><span>00</span></div>
+                        <div class="flex numbox-delete">
+                            <span
+                                ><img src="images/btns/btn_delete.png" alt=""
+                            /></span>
+                        </div>
+                    </div>
+                    <div class="winepos-ui-pop-btns">
+                        <div class="flex opb"><span>최종금액</span></div>
+                        <div class="flex opb"><span>할인(금액)</span></div>
+                        <div class="flex opb"><span>할인(%)</span></div>
+                        <div class="flex confirm"><span>확인</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="winepos-ui-pop-search">
+            <div class="winepos-ui-search-close"></div>
+            <div class="winepos-ui-search-view">
+                <div class="winepos-ui-pop-title flex">
+                    <h6>검색</h6>
+                    <img
+                        src="images/btns/btn_close2.png"
+                        alt=""
+                        class="search-pop-close"
+                    />
+                </div>
+                <div class="winepos-searchbox">
+                    <div class="searchbox">
+                        <input type="text" placeholder="이름을 입력해주세요." />
+                    </div>
+                    <div class="searchinfo">
+                        <div class="search-hd">
+                            <div>No.</div>
+                            <div>회원명</div>
+                            <div>전화번호</div>
+                            <div>적립금</div>
+                        </div>
+                        <div class="search-bd">
+                            <div class="search-con">
+                                <div>1</div>
+                                <div class="user">홍길동</div>
+                                <div>010-1234-5678</div>
+                                <div class="point">1000p</div>
+                            </div>
+                            <div class="search-con">
+                                <div>2</div>
+                                <div class="user">임꺽정</div>
+                                <div>010-1234-5678</div>
+                                <div class="point">2000p</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js" charset="utf-8"></script>
+    </body>
+</html>
